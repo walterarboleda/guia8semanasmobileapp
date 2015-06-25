@@ -1,0 +1,160 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/consulta_de_puntos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/size" />
+        
+        <TabHost
+           android:id="@android:id/tabhost"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/textView1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+               <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp" >
+
+                    <TextView
+                        android:id="@+id/txtdia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="19dp"
+                        android:text="@string/el_dia_de_hoy_usted_hizo"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageButton
+                        android:id="@+id/btnend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/txtdia"
+                        android:layout_alignRight="@+id/txtdia"
+                        android:layout_below="@+id/txtpundia"
+                        android:layout_marginTop="21dp"
+                        android:contentDescription="@string/todo"
+                        android:onClick="salir"
+                        android:src="@android:drawable/btn_dialog" />
+
+                    <TextView
+                        android:id="@+id/txtpundia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtdia"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/puntos" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp" >
+
+                    <TextView
+                        android:id="@+id/txtsem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="19dp"
+                        android:text="@string/esta_semana_usted_hizo"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageButton
+                        android:id="@+id/btnend1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/txtsem"
+                        android:layout_alignRight="@+id/txtsem"
+                        android:layout_below="@+id/txtpunsem"
+                        android:layout_marginTop="21dp"
+                        android:contentDescription="@string/todo"
+                        android:onClick="salir"
+                        android:src="@android:drawable/btn_dialog" />
+
+                    <TextView
+                        android:id="@+id/txtpunsem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtsem"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/puntos" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp" >
+
+                    <TextView
+                        android:id="@+id/txttotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="19dp"
+                        android:text="@string/su_total_de_puntos_es"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageButton
+                        android:id="@+id/btnend2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/txttotal"
+                        android:layout_alignRight="@+id/txttotal"
+                        android:layout_below="@+id/txtpuntotal"
+                        android:layout_marginTop="21dp"
+                        android:contentDescription="@string/todo"
+                        android:onClick="salir"
+                        android:src="@android:drawable/btn_dialog" />
+
+                    <TextView
+                        android:id="@+id/txtpuntotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txttotal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/puntos" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout> 
+    </TabHost>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+	<ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:contentDescription="@string/comenzar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/saludbg" />
+ 	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/display_semana"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="5dp"
+	        android:text="@string/seleccione_una_fecha"
+	        android:textSize="25sp" />
+
+	    <TextView
+	        android:id="@+id/display_date"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="5dp"
+	        android:text="@string/seleccione_una_fecha"
+	        android:textSize="18sp" />
+
+	   <com.example.app8semanas.CalendarioView
+	       android:id="@+id/calendar"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_marginBottom="30dp"
+	       android:alpha="0.8" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:alpha="0.9"
+	        android:padding="5dp" >
+
+	        <Button
+	            android:id="@+id/registrar_progreso"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:layout_width="0px"
+	            android:layout_height="80dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:drawableLeft="@drawable/ic_action_process_start"
+	            android:drawablePadding="5dp"
+	            android:padding="10dp"
+	            android:paddingLeft="10dp"
+	            android:text="@string/registrar_progreso"
+	            android:textColor="#333"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+
+	        <Button
+	            android:id="@+id/tematica"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:layout_width="0px"
+	            android:layout_height="80dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:drawableLeft="@drawable/ic_action_document"
+	            android:drawablePadding="5dp"
+	            android:padding="10dp"
+	            android:text="@string/tem_tica"
+	            android:textColor="#333"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:alpha="0.9"
+	        android:padding="5dp" >
+
+	        <Button
+	            android:id="@+id/recomendacion"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:layout_width="0px"
+	            android:layout_height="80dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:drawableLeft="@drawable/ic_action_warning"
+	            android:drawablePadding="5dp"
+	            android:padding="10dp"
+	            android:text="@string/recomendaci_n"
+	            android:textColor="#333"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+
+	        <Button
+	            android:id="@+id/asignacion"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:layout_width="0px"
+	            android:layout_height="80dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:drawableLeft="@drawable/ic_action_puzzle"
+	            android:drawablePadding="5dp"
+	            android:padding="10dp"
+	            android:text="@string/asignaci_n"
+	            android:textColor="#333"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:alpha="0.9" >
+
+	        <Button
+	            android:id="@+id/puntaje"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:layout_width="0px"
+	            android:layout_height="80dp"
+	            android:layout_gravity="bottom|center"
+	            android:layout_weight="1"
+	            android:background="#222"
+	            android:drawableTop="@drawable/ic_action_star"
+	            android:padding="10dp"
+	            android:text="@string/puntaje"
+	            android:textColor="#FFF"
+	            android:textStyle="bold" />
+
+	        <Button
+	            android:id="@+id/sincronizar"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:layout_width="0px"
+	            android:layout_height="80dp"
+	            android:layout_gravity="bottom|center"
+	            android:layout_weight="1"
+	            android:background="#222"
+	            android:drawableTop="@drawable/ic_action_refresh"
+	            android:padding="10dp"
+	            android:text="@string/sincronizar"
+	            android:textColor="#FFF"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+
+	</LinearLayout>
+</RelativeLayout>

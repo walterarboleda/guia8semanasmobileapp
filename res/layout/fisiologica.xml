@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.App8Semanas.MainFisiologia" >
+    
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/edad_fisiologica"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titulo" >
+		
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	
+     <TextView
+        android:id="@+id/titulo_ejercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ejercicio" />
+
+      <Spinner
+        android:id="@+id/ejercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ejercicio_array" />
+
+     <TextView
+         android:id="@+id/titulo_desayuno"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/desayuno" />
+     
+     <Spinner
+        android:id="@+id/desayuno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/desayuno_array" />
+     
+     <TextView
+        android:id="@+id/titulo_cena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cena" />
+
+     <Spinner
+        android:id="@+id/cena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/cena_array" />
+     
+     <TextView
+        android:id="@+id/titulo_descanso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descanso" />
+
+     <Spinner
+        android:id="@+id/descanso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/descanso_array" />
+     
+     <TextView
+        android:id="@+id/titulo_fumar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fumar" />
+
+     <Spinner
+        android:id="@+id/fumar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/fumar_array" />
+     
+     <TextView
+        android:id="@+id/titulo_alcohol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alcohol" />
+
+     <Spinner
+        android:id="@+id/alcohol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/alcohol_array" />  
+
+     <Button
+         android:id="@+id/continuar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:text="@string/continuar" />          
+     
+     </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

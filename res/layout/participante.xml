@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.App8Semanas.MainParticipante" >
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/datos_personales"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView1" >
+        
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+    <TextView
+        android:id="@+id/txtCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cedula" />
+    
+    <EditText
+        android:id="@+id/edtcedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_cedula" />
+    
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre" />
+    
+    <EditText
+        android:id="@+id/edtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_nombre" />
+    
+    <TextView
+        android:id="@+id/txtAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alias" />
+    
+    <EditText
+        android:id="@+id/edtalias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_un_alias" />
+    
+    <TextView
+        android:id="@+id/txtApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apellido" />
+    
+    <EditText
+        android:id="@+id/edtapellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_apellido" />
+    
+    <TextView
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono" />
+    
+    <EditText
+        android:id="@+id/edttelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_telefono" />
+    
+    <TextView
+        android:id="@+id/txtMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail" />
+    
+    <EditText
+        android:id="@+id/edtmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_email" />
+    
+    <Button
+         android:id="@+id/continuar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:text="@string/continuar" />
+    
+	</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

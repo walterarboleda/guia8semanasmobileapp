@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <com.example.app8semanas.CalendarioView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/display_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#000"
+        android:text="@string/seleccione_una_fecha"
+        android:textColor="#FFF" />
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2" >
+    </GridView>
+    <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="#000"
+       	>
+	        <Button
+		        android:id="@+id/registrar_progreso"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center|left"
+		        android:text="@string/registrar_progreso"
+		        android:background="@null"
+		        android:textColor="#fff"
+		        android:padding="10dp"
+		        android:textStyle="bold"/>
+            <Button 
+               android:id="@+id/tematica"
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content"
+	           android:text="@string/tem_tica" 
+	           android:layout_gravity="center|right"
+	           android:background="@null" 
+	           android:textColor="#fff"
+               android:padding="10dp"
+               android:textStyle="bold"/>
+	  </FrameLayout>
+	  <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="#000"
+       	>
+	        <Button
+		        android:id="@+id/recomendacion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center|left"
+		        android:text="@string/recomendaci_n"
+		        android:background="@null"
+		        android:textColor="#fff"
+		        android:padding="10dp"
+		        android:textStyle="bold"/>
+            <Button 
+               android:id="@+id/asignacion"
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content"
+	           android:text="@string/asignaci_n" 
+	           android:layout_gravity="center|right"
+	           android:background="@null" 
+	           android:textColor="#fff"
+               android:padding="10dp"
+               android:textStyle="bold"/>
+	  </FrameLayout>
+	  <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="#000"
+       	>
+	        <Button
+		        android:id="@+id/puntaje"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center|left"
+		        android:text="@string/puntaje"
+		        android:background="@null"
+		        android:textColor="#fff"
+		        android:padding="10dp"
+		        android:textStyle="bold"/>
+            <Button 
+               android:id="@+id/sincronizar"
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content"
+	           android:text="@string/sincronizar" 
+	           android:layout_gravity="center|right"
+	           android:background="@null" 
+	           android:textColor="#fff"
+               android:padding="10dp"
+               android:textStyle="bold"/>
+	  </FrameLayout>
+
+</LinearLayout>

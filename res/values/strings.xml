@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">App8Semanas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="datos_personales">Datos Personales</string>
+    <string name="ingrese_su_cedula">Ingrese su cedula</string>
+    <string name="ingrese_su_nombre">Ingrese su nombre</string>
+    <string name="ingrese_su_telefono">Ingrese su telefono</string>
+    <string name="salir">Salir</string>
+    <string name="ingrese_su_email">Ingrese su email</string>
+    <string name="guardar">Guardar</string>
+    <string name="continuar">Continuar</string>
+    <string name="ingrese_su_apellido">Ingrese su apellido</string>
+    <string name="cedula">Cedula</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="_id_edttelefono">\@+id/edttelefono</string>
+    <string name="telefono">Telefono</string>
+    <string name="todo">TODO</string>
+    <string name="e_mail">E-mail</string>
+    <string name="datos_antropometricos">Datos Antropometricos</string>
+    <string name="ingrese_fecha_de_nacimiento">Ingrese fecha de nacimiento</string>
+    <string name="peso_kg_">Peso(Kg)</string>
+    <string name="atras">Atras</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="perimetraje_abdominal">Perimetraje Abdominal</string>
+    <string name="perimetro_del_abdomen">Perimetro del abdomen</string>
+    <string name="estatura_cm_">Estatura(cm)</string>
+    <string name="ingrese_estatura_en_cm">Ingrese estatura en cm</string>
+    <string name="ingrese_peso_en_kg">Ingrese peso en Kg</string>
+    <string name="ingrese_un_alias">Ingrese un alias</string>
+    <string name="alias">Alias</string>
+    <string name="seleccion_de_metas_">"Seleccion de Metas "</string>
+    <string name="personales">Personales</string>
+    <string name="seleccione_su_segunda_meta">Seleccione su segunda meta</string>
+    <string name="seleccione_su_primera_meta">Seleccione su primera meta</string>
+    <string name="textview">TextView</string>
+    <string name="meta_1">Meta 1</string>
+    <string name="ingrese_su_propia_meta">Ingrese su propia meta</string>
+    <string name="meta_2">Meta 2</string>
+    <string name="_bienvenido_a_a_la_aventura_hacia_una_vida_mejor_">¡Bienvenido(a) a la aventura hacia una vida mejor!</string>
+    <string name="la_salud_es_la_ventaja_m_s_valiosa_que_cualquier_persona_puede_tener_esta_gu_a_personal_ser_uno_de_sus_compa_eros_en_su_plan_hacia_la_buena_salud_cada_semana_se_introducir_un_aspecto_diverso_de_la_buena_salud_">La salud es la ventaja más valiosa que cualquier persona puede tener, esta guía personal será uno de sus compañeros en su plan hacia la buena salud, cada semana se introducirá un aspecto diverso de la buena salud.</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="mi_compa_ero">Mi Compañero</string>
+    <string name="asignaci_n">Asignación</string>
+    <string name="recomendaci_n">Recomendación</string>
+    <string name="tem_tica">Temática</string>
+    <string name="seleccione_una_fecha">Seleccione una fecha</string>
+    <string name="registrar_progreso">Registrar progreso</string>
+    <string name="title_activity_progreso">Progreso</string>
+    <string name="registro_de_progreso">Registro de Progreso</string>
+    <string name="registro_personal">Registro Personal</string>
+    <string name="de_salud">De Salud</string>
+    <string name="semana_1">Semana 1</string>
+    <string name="_01_01_2015">01/01/2015</string>
+    <string name="seleccione_una_opcion">Seleccione Una Opcion</string>
+    <string name="hice_15_minutos">Hice 15 minutos</string>
+    <string name="hice_2_horas">Hice 2 horas</string>
+    <string name="hice_1_hora_y_30_minutos">Hice 1 hora y 30 minutos</string>
+    <string name="hice_1_hora">Hice 1 hora</string>
+    <string name="hice_30_minutos">Hice 30 minutos</string>
+    <string name="hice_45_minutos">Hice 45 minutos</string>
+    <string name="hice_1_hora_y_15_minutos">Hice 1 hora y 15 minutos</string>
+    <string name="hice_1_hora_y_45_minutos">Hice 1 hora y 45 minutos</string>
+    <string name="cuanto_tiempo_realiz_actividad_f_sica">Cuanto tiempo realizó actividad física</string>
+    <string name="comi_mas_de_5_porciones_de_frutas_y_vegetales">Comió mas de 5 porciones de frutas y vegetales</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="dorm_entre_7_y_8_horas">Dormí entre 7 y 8 horas</string>
+    <string name="usted_logr_">"Usted logró "</string>
+    <string name="edad_fisiologica">Edad Fisiologica</string>
+    <string name="fumar">Fumar</string>
+    <string name="desayuno">Desayuno</string>
+    <string name="cena">Cena</string>
+    <string name="descanso">Descanso</string>
+    <string name="ejercicio">Ejercicio</string>
+    <string name="alcohol">alcohol</string>
+     <string-array name="ejercicio_array">
+        <item>Casi diariamente</item>
+        <item>Menos de 3 veces por semana</item>
+        <item>Rara vez</item>
+    </string-array>
+    <string-array name="desayuno_array">
+        <item>Casi diariamente</item>
+        <item>A veces</item>
+        <item>Rara vez</item>
+    </string-array>
+    <string-array name="cena_array">
+        <item>Casi diariamente</item>
+        <item>A veces</item>
+        <item>Rara vez</item>
+    </string-array>
+    <string-array name="descanso_array">
+        <item>6 horas o menos</item>
+        <item>7 u 8 horas</item>
+        <item>9 horas o más</item>
+    </string-array>
+    <string-array name="fumar_array">
+        <item>Nunca fumé</item>
+        <item>Dejé de fumar</item>
+        <item>Fumo menos de un paquete al día</item>
+        <item>Fumo más de un paquete al día</item>
+    </string-array>
+    <string-array name="alcohol_array">
+        <item>No bebo</item>
+        <item>1 o 2 porciones</item>
+        <item>3 a 10 porciones</item>
+        <item>Más de 10 porciones</item>
+    </string-array>
+        <string name="animar_">"Animar "</string>
+        <string name="avanzar_en_su_proyecto_semanal">Avanzar en su proyecto semanal</string>
+        <string name="puntaje">PUNTAJE</string>
+        <string name="sincronizar">ENVIAR DATOS</string>
+        <string name="consulta_de_puntos">Consulta de Puntos</string>
+        <string name="esta_semana_usted_hizo">Esta semana usted hizo</string>
+        <string name="puntos">puntos</string>
+        <string name="su_total_de_puntos_es">Su total de puntos es</string>
+        <string name="el_dia_de_hoy_usted_hizo">El dia de hoy usted hizo</string>
+        <string name="mayorque">&gt;</string>
+        <string name="menorque">&lt;</string>
+
+</resources>

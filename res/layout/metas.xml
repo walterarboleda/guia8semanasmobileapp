@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.App8Semanas.MainMetas" >
+    
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/seleccion_de_metas_"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView1" >
+        
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personales" />
+    
+    <TextView
+        android:id="@+id/txtmeta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccione_su_primera_meta" />
+    
+    <Spinner
+        android:id="@+id/spmt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/txtmeta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccione_su_segunda_meta" />
+    
+    <Spinner
+        android:id="@+id/spmt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/txtlogro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meta_1" />
+    
+    <EditText
+        android:id="@+id/edtmeta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_propia_meta" />
+
+    <TextView
+        android:id="@+id/txtm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meta_2" />
+    
+    <EditText
+        android:id="@+id/edtmeta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_su_propia_meta" />
+        
+    <Button
+         android:id="@+id/continuar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:text="@string/continuar" />
+    
+	</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

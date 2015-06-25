@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.App8Semanas.MainAntropometrico" >
+    
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/datos_antropometricos"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView1" >
+        
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+    <TextView
+        android:id="@+id/txtmeta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_de_nacimiento" />
+    
+    <EditText
+        android:id="@+id/edtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_fecha_de_nacimiento"
+        android:inputType="date" >
+        <requestFocus />
+    </EditText>
+        
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/peso_kg_" />
+    
+    <EditText
+        android:id="@+id/edtpeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_peso_en_kg" />
+    
+    <TextView
+        android:id="@+id/txtEstatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/estatura_cm_" />
+    
+    <EditText
+        android:id="@+id/edtestatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ingrese_estatura_en_cm" />
+    
+    <TextView
+        android:id="@+id/txtPerimetro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/perimetraje_abdominal" />
+    
+    <EditText
+        android:id="@+id/edtabd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/perimetro_del_abdomen" />
+        
+    <Button
+         android:id="@+id/continuar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:text="@string/continuar" />
+    
+	</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
